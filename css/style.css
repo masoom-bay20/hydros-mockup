@@ -1,4 +1,4 @@
-      @import url('https://fonts.googleapis.com/css2?family=Trirong:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
+          @import url('https://fonts.googleapis.com/css2?family=Trirong:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
 
       * {
         margin: 0;
@@ -75,6 +75,29 @@
         height: 100vh;
         background-position: center;
       }
+      #scroll-btn{
+        display: flex;
+
+      }
+      .scroll-btn{
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border: 2px solid black;
+        border-radius: 100%;
+        background-color: white;
+        margin-top: 10px;
+        margin-left: 90rem;
+      }
+      .scroll-btn:hover{
+        background-color: #367db2
+      }
+      .scroll-btn img{
+        padding-left: 18px;
+        margin-top: 18px;
+        
+      }
+
       .tagline h1 {
         padding-top: 200px;
         padding-left: 40px;
@@ -105,21 +128,21 @@
       .boxes {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-gap:15px;
         margin: 0 auto;
-        width: 80%;
+        width: 85%;
         margin-top: -100px;
         margin-bottom: 150px;
       }
 
       .cancer-patients,
       .health-optimization,
-      .box3,
-      .box4,
-      .box5 {
+      .athletes,
+      .cold-flu,
+      .beauty {
         width: 245px;
-        height: 358px;
-        border-radius: 20px;
-      }
+        padding: 25px 15px;
+       }
       .cancer-patients {
         border-radius: 20px;
         background: linear-gradient(#0894b8 0%, #77cbec 100%);
@@ -153,38 +176,40 @@
         box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.25);
         color: white;
       }
+      
       .learn {
         text-decoration: none;
-        color: white;
-        font-family: "Gilroy";
-        font-family: "Poppins", sans-serif;
-        padding-left: 20px;
-        font-size: 13px;
-        font-weight: 500;
-        border-radius: 0;
+        font-family:"Poppins","Sans-serif";
         color: #fff;
         border: none;
+        padding-left: 10px;
       }
-
+      .arrow{
+        padding-left: 10px;
+      }
+      .cancer-dec{
+        padding-top: 130px !important;
+      }
       .slider-heading {
-        margin-left: 15px;
-        font-family: "Trirong", serif;
+        font-family: 'Trirong';
         font-size: 23px;
-        height: 40px;
-        line-height: 1.75;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: -1px;
       }
 
+    
       /* text inside the box  */
       .short-dec {
         font-family: "Poppins", sans-serif;
-        font-weight: 500;
+        font-weight: 400;
         font-size: 13px;
         letter-spacing: -0.02em;
         line-height: 15px;
         color: #fff;
-        padding-top: 160px;
-        padding-left: 20px;
+        padding-top: 63px;
         line-height: 15px;
+        padding-left: 10px;
       }
 
       /* **************For Boxes Arrow button **************** */
@@ -257,7 +282,7 @@
             
       }
 
-      .text-nutrition-1 .para-1 {
+      .text-nutrition-1 .hydros-heading{
         font-family: 'Trirong', serif;
         font-weight: 300;
         font-size: 29px;
@@ -267,8 +292,8 @@
         padding-right: 70px;
       }
      
-      .text-nutrition-2 .para-2,
-      .para-3 {
+      .text-nutrition-2 .hydros-subheading,
+      .hydros-text{
         font-family: "Trirong";
         font-weight: 300;
         font-size: 20px;
